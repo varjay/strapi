@@ -43,6 +43,7 @@ const BrowseAssets = () => {
   };
 
   const handleDeleteFilter = index => {
+    console.log(index);
     removeFilter(index);
   };
 

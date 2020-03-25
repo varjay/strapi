@@ -287,6 +287,8 @@ const HomePage = () => {
     return <LoadingIndicatorPage />;
   }
 
+  console.log(generateFiltersFromSearch(search));
+
   return (
     <Container>
       <Header {...headerProps} />
