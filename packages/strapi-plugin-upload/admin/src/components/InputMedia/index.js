@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { get } from 'lodash';
 
-import { getTrad } from '../../utils';
+import { getTrad, prefixFileUrlWithBackendUrl } from '../../utils';
 import CardControl from '../CardControl';
 import CardControlWrapper from './CardControlWrapper';
 import CardPreviewWrapper from './CardPreviewWrapper';
@@ -19,11 +21,16 @@ const InputMedia = ({ label, onChange, name, attribute, value, type }) => {
     step: null,
   });
   const [fileToDisplay, setFileToDisplay] = useState(0);
+  const hasNoValue = value !== null && Array.isArray(value) && value.length === 0;
+  const currentFile = attribute.multiple && value.length > 1 ? value[fileToDisplay] : value;
+  const fileURL = get(currentFile, ['url'], null);
+  const prefixedFileURL = fileURL ? prefixFileUrlWithBackendUrl(fileURL) : null;
+  const displaySlidePagination =
+    attribute.multiple && value.length > 1 ? ` (${fileToDisplay + 1}/${value.length})` : '';
 
   const handleClickToggleModal = () => {
     setModal(prev => ({ isOpen: !prev.isOpen }));
   };
-  const hasNoValue = Array.isArray(value) && value.length === 0;
 
   const handleChange = v => {
     onChange({ target: { name, type, value: v } });
@@ -60,8 +67,9 @@ const InputMedia = ({ label, onChange, name, attribute, value, type }) => {
     setModal(() => ({ isOpen: true, step: 'edit' }));
   };
 
-  const displaySlidePagination =
-    attribute.multiple && value.length > 1 ? ` (${fileToDisplay + 1}/${value.length})` : '';
+  const handleCopy = () => {
+    strapi.notification.info(getTrad('notification.link-copied'));
+  };
 
   return (
     <Wrapper>
@@ -73,7 +81,9 @@ const InputMedia = ({ label, onChange, name, attribute, value, type }) => {
           {!hasNoValue && (
             <>
               <CardControl color="#9EA7B8" type="pencil" onClick={handleEditFile} />
-              <CardControl color="#9EA7B8" type="link" onClick={handleClickToggleModal} />
+              <CopyToClipboard onCopy={handleCopy} text={prefixedFileURL}>
+                <CardControl color="#9EA7B8" type="link" />
+              </CopyToClipboard>
               <CardControl color="#9EA7B8" type="trash-alt" onClick={handleRemoveFile} />
             </>
           )}
