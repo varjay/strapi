@@ -26,13 +26,7 @@ FiltersList.defaultProps = {
 
 FiltersList.propTypes = {
   onClick: PropTypes.func,
-  filters: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      filter: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
-    })
-  ),
+  filters: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default FiltersList;

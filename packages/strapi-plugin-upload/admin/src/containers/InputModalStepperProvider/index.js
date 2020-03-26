@@ -10,15 +10,17 @@ import pluginId from '../../pluginId';
 import reducer, { initialState } from './reducer';
 
 const InputModalStepperProvider = ({
+  children,
   isOpen,
   multiple,
-  children,
   onInputMediaChange,
   selectedFiles,
+  step,
 }) => {
   const [reducerState, dispatch] = useReducer(reducer, initialState, state =>
     init({
       ...state,
+      currentStep: step,
       selectedFiles: Array.isArray(selectedFiles) ? selectedFiles : [selectedFiles],
     })
   );
@@ -256,6 +258,7 @@ InputModalStepperProvider.propTypes = {
   multiple: PropTypes.bool.isRequired,
   onInputMediaChange: PropTypes.func,
   selectedFiles: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
+  step: PropTypes.string.isRequired,
 };
 
 InputModalStepperProvider.defaultProps = {

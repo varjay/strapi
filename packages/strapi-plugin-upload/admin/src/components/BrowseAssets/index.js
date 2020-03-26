@@ -25,7 +25,6 @@ const BrowseAssets = () => {
     removeFilter,
     selectedFiles,
     setParam,
-    sort,
   } = useModalContext();
 
   const handleChangeParams = ({ target: { name, value } }) => {
@@ -43,7 +42,6 @@ const BrowseAssets = () => {
   };
 
   const handleDeleteFilter = index => {
-    console.log(index);
     removeFilter(index);
   };
 
@@ -80,7 +78,7 @@ const BrowseAssets = () => {
               />
             </Padded>
           )}
-          <SortPicker onChange={handleChangeParams} value={sort} />
+          <SortPicker onChange={handleChangeParams} value={params._sort} />
           <Padded left size="sm" />
           <Filters
             filters={params.filters}

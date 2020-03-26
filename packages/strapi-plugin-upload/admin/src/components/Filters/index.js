@@ -22,13 +22,7 @@ Filters.defaultProps = {
 };
 
 Filters.propTypes = {
-  filters: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      filter: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
-    })
-  ),
+  filters: PropTypes.arrayOf(PropTypes.object),
   onChange: PropTypes.func,
   onClick: PropTypes.func,
 };

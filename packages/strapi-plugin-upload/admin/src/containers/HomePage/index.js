@@ -31,7 +31,7 @@ import Filters from '../../components/Filters';
 import List from '../../components/List';
 import ListEmpty from '../../components/ListEmpty';
 import ModalStepper from '../ModalStepper';
-import { deleteFilters, generateStringParamsFromQuery, getHeaderLabel } from './utils';
+import { generateStringParamsFromQuery, getHeaderLabel } from './utils';
 import init from './init';
 import reducer, { initialState } from './reducer';
 
@@ -165,7 +165,14 @@ const HomePage = () => {
   };
 
   const handleChangeParams = ({ target: { name, value } }) => {
-    const updatedQueryParams = generateNewSearch({ [name]: value });
+    let updatedQueryParams;
+
+    if (name === 'filters') {
+      const filters = [...generateFiltersFromSearch(search), value];
+      updatedQueryParams = generateNewSearch({ [name]: filters });
+    } else {
+      updatedQueryParams = generateNewSearch({ [name]: value });
+    }
     const newSearch = generateSearchFromFilters(updatedQueryParams);
 
     push({ search: encodeURI(newSearch) });
@@ -196,13 +203,17 @@ const HomePage = () => {
     setIsPopupOpen(prev => !prev);
   };
 
-  const handleDeleteFilter = filter => {
-    const currentFilters = generateFiltersFromSearch(search);
-    const updatedFilters = deleteFilters(currentFilters, filter);
+  const handleDeleteFilter = index => {
+    const filters = generateFiltersFromSearch(search).filter(
+      (filter, filterIndex) => filterIndex !== index
+    );
+    // const currentFilters = generateFiltersFromSearch(search);
+    // const updatedFilters = deleteFilters(currentFilters, index);
+    const updatedQueryParams = generateNewSearch({ filters });
 
-    handleChangeParams({
-      target: { name: 'filters', value: updatedFilters },
-    });
+    const newSearch = generateSearchFromFilters(updatedQueryParams);
+
+    push({ search: encodeURI(newSearch) });
   };
 
   const handleDeleteMedias = async () => {
@@ -286,8 +297,6 @@ const HomePage = () => {
   if (isLoading) {
     return <LoadingIndicatorPage />;
   }
-
-  console.log(generateFiltersFromSearch(search));
 
   return (
     <Container>
