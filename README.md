@@ -109,11 +109,11 @@ Enjoy 🎉
 
 ## 贡献
 
-在向项目提交请求请求之前，请阅读我们的[Contributing Guide]（./ CONTRIBUTING.md）。
+在向项目提交请求请求之前，请阅读我们的[Contributing Guide](./CONTRIBUTING.md)。
 
 ## 社区支持
 
-有关使用Strapi的一般帮助，请参阅[官方Strapi文档]（https://strapi.io/documentation/）。 要获得其他帮助，您可以使用以下任一渠道提出问题：
+有关使用Strapi的一般帮助，请参阅[官方Strapi文档](https://strapi.io/documentation/)。 要获得其他帮助，您可以使用以下任一渠道提出问题：
 
 - [StackOverflow](http://stackoverflow.com/questions/tagged/strapi)
 - [Slack](http://slack.strapi.io) (更快的支持帮助)
@@ -124,14 +124,14 @@ Enjoy 🎉
 - [Facebook](https://www.facebook.com/Strapi-616063331867161)
 - [YouTube 频道](https://www.youtube.com/strapi) (从视频教程中学习)
 
-## Migration
+## 迁移
 
-遵循Wiki上的[迁移指南]（https://github.com/strapi/strapi/wiki），以使您的项目保持最新。
+遵循Wiki上的[迁移指南](https://github.com/strapi/strapi/wiki)，以使您的项目保持最新。
 
-## Roadmap
+## 开发计划
 
-查看我们的[路线图]（https://portal.productboard.com/strapi），以了解已发布的最新功能和即将推出的功能。 您也可以给我们提供见解并投票支持特定功能。
+查看我们的[开发计划](https://portal.productboard.com/strapi)，以了解已发布的最新功能和即将推出的功能。 您也可以给我们提供见解并投票支持特定功能。
 
-## License
+## 许可证
 
-[MIT License](LICENSE.md) Copyright (c) 2015-2020 [Strapi Solutions](https://strapi.io/).
+[MIT License](LICENSE.md)Copyright (c) 2015-2020 [Strapi Solutions](https://strapi.io/).
