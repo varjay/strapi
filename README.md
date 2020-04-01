@@ -4,7 +4,7 @@
   </a>
 </p>
 <h3 align="center">API创建变得简单，安全和快速。</h3>
-<p align="center">最先进的开源无头CMS，可轻松构建强大的API。</p>
+<p align="center">最先进的开源前后端分离CMS，可轻松构建强大的API。</p>
 <br />
 <p align="center">
   <a href="https://www.npmjs.org/package/strapi">
@@ -31,7 +31,7 @@
 
 <br>
 
-Strapi是一个免费的开源无头CMS，可在您需要的任何地方提供您的内容。
+Strapi是一个免费的开源前后端分离CMS，可在您需要的任何地方提供您的内容。
 
 - **掌控您的数据**。 使用Strapi，您可以知道数据的存储位置，并且始终可以完全控制。
 - **自托管**。 您可以按照自己的方式托管和扩展Strapi项目。 您可以选择所需的任何托管平台：AWS，Netlify，Heroku，VPS或专用服务器。 您可以随着成长而扩展，100％独立。
@@ -134,4 +134,4 @@ Enjoy 🎉
 
 ## 许可证
 
-[MIT License](LICENSE.md)Copyright (c) 2015-2020 [Strapi Solutions](https://strapi.io/).
+[MIT License](LICENSE.md) Copyright (c) 2015-2020 [Strapi Solutions](https://strapi.io/).
