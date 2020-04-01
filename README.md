@@ -97,13 +97,13 @@ Enjoy 🎉
 
 ## 特征
 
-- **现代管理面板：**优雅，完全可定制且完全可扩展的管理面板。
-- **默认情况下安全：**可重用策略，CORS，CSP，P3P，Xframe，XSS等。
-- **面向插件：**在几秒钟内安装身份验证系统，内容管理，自定义插件等。
+- **现代管理面板：** 优雅，完全可定制且完全可扩展的管理面板。
+- **默认情况下安全：** 可重用策略，CORS，CSP，P3P，Xframe，XSS等。
+- **面向插件：** 在几秒钟内安装身份验证系统，内容管理，自定义插件等。
 - **快速发展：** Strapi建立在Node.js之上，提供了惊人的性能。
-- **前端框架：**使用任何前端框架（React，Vue，Angular等），移动应用程序甚至是IoT。
-- **强大的CLI：**快速运行Scaffold项目和API。
-- **SQL和NoSQL数据库：**与MongoDB，PostgreSQL，MySQL，MariaDB和SQLite一起使用。
+- **前端框架：** 使用任何前端框架（React，Vue，Angular等），移动应用程序甚至是IoT。
+- **强大的CLI：** 快速运行Scaffold项目和API。
+- **SQL和NoSQL数据库：** 与MongoDB，PostgreSQL，MySQL，MariaDB和SQLite一起使用。
 
 **[在我们的网站上查看更多](https://strapi.io/overview)**.
 
