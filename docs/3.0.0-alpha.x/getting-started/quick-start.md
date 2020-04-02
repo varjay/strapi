@@ -2,7 +2,7 @@
 
 ::: danger
 
-The Alpha version of Strapi is no longer supported, please use the Beta version. You can find the relevant [documentation here](https://strapi.io/documentation/).
+The Alpha version of Strapi is no longer supported, please use the Beta version. You can find the relevant [documentation here](http://strapi.cc/documentation/).
 
 :::
 

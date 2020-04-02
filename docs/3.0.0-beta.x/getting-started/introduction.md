@@ -1,6 +1,6 @@
-# 🚀 Welcome to the Strapi documentation!
+# 🚀 欢迎使用Strapi文档！
 
-**Strapi is the open-source [Headless CMS](https://strapi.io) developers love.**
+**Strapi is the open-source [Headless CMS](http://strapi.cc) developers love.**
 
 ## What is Strapi?
 
@@ -49,7 +49,7 @@ Strapi is an open-source project, all of Strapi's source code is under the MIT l
 
 Official Strapi plugins will be found in the marketplace section of the admin panel. Unfortunately, the Strapi marketplace is not open to outside contribution, but stay tuned as that may change in the near future.
 
-With that said you can still [develop & use your own plugins.](https://strapi.io/documentation/3.0.0-beta.x/plugin-development/quick-start.html)
+With that said you can still [develop & use your own plugins.](http://strapi.cc/documentation/3.0.0-beta.x/plugin-development/quick-start.html)
 
 ### Roadmap
 

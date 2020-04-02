@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the open source [headless CMS](https://strapi.io) developers love.
+Welcome to the open source [headless CMS](http://strapi.cc) developers love.
 
 ## Strapi Documentation
 
@@ -12,7 +12,7 @@ Users love Strapi because it is open source, MIT licensed, fully customizable an
 
 ::: danger
 
-The Alpha version of Strapi is no longer supported, please use the Beta version. You can find the relevant [documentation here](https://strapi.io/documentation/).
+The Alpha version of Strapi is no longer supported, please use the Beta version. You can find the relevant [documentation here](http://strapi.cc/documentation/).
 
 :::
 

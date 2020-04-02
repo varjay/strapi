@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Strapi Documentation',
-  description: 'The headless CMS developers love.',
+  title: 'Strapi 文档',
+  description: '前后端分离，开发者最爱。',
   base: '/documentation/',
   plugins: [
     '@vuepress/medium-zoom',
@@ -17,7 +17,7 @@ module.exports = {
       'link',
       {
         rel: 'icon',
-        href: 'https://strapi.io/favicon.ico',
+        href: 'http://strapi.cc/favicon.ico',
       },
     ],
 
@@ -39,21 +39,21 @@ module.exports = {
       'meta',
       {
         property: 'og:url',
-        content: 'https://strapi.io/documentation/',
+        content: 'http://strapi.cc/documentation/',
       },
     ],
     [
       'meta',
       {
         property: 'og:description',
-        content: 'The headless CMS developers love.',
+        content: '前后端分离，开发者最爱。',
       },
     ],
     [
       'meta',
       {
         property: 'og:image',
-        content: 'https://strapi.io/assets/images/strapi-website-preview.png',
+        content: 'http://strapi.cc/assets/images/strapi-website-preview.png',
       },
     ],
     [
@@ -75,7 +75,7 @@ module.exports = {
       'meta',
       {
         property: 'twitter:url',
-        content: 'https://strapi.io/documentation/',
+        content: 'http://strapi.cc/documentation/',
       },
     ],
     [
@@ -96,21 +96,21 @@ module.exports = {
       'meta',
       {
         property: 'twitter:description',
-        content: 'The headless CMS developers love.',
+        content: '前后端分离，开发者最爱。',
       },
     ],
     [
       'meta',
       {
         property: 'twitter:image',
-        content: 'http://strapi.io/assets/images/strapi-website-preview.png',
+        content: 'http://strapi.cc/assets/images/strapi-website-preview.png',
       },
     ],
   ],
   themeConfig: {
     nav: [
       {
-        text: 'Versions',
+        text: '版本',
         items: [
           {
             text: 'Version 3.0.0-beta.x',
@@ -123,45 +123,46 @@ module.exports = {
         ],
       },
       {
-        text: 'Website',
-        link: 'https://strapi.io',
+        text: '网站',
+        link: 'http://strapi.cc',
       },
       {
         text: 'Slack',
-        link: 'https://slack.strapi.io',
+        link: 'https://slack.strapi.cc',
       },
       {
-        text: 'Blog',
-        link: 'https://blog.strapi.io',
+        text: '博客',
+        link: 'https://blog.strapi.cc',
       },
     ],
     repo: 'strapi/strapi',
     docsDir: 'docs',
     algolia: {
-      apiKey: 'a93451de224096fb34471c8b8b049de7',
+      apiKey: '0a4d6060b38a9d36854b61bd43cd0203',
       indexName: 'strapi',
+      appId: 'SYOUT74DH0',
     },
     editLinks: true,
-    editLinkText: 'Improve this page',
+    editLinkText: '改善此页面',
     serviceWorker: true,
     sidebarDepth: 1,
     sidebar: {
       '/3.0.0-beta.x/': [
         {
           collapsable: false,
-          title: '🚀 Getting Started',
+          title: '🚀 入门',
           children: [
-            ['/3.0.0-beta.x/getting-started/introduction', 'Introduction'],
-            ['/3.0.0-beta.x/getting-started/installation', 'Installation'],
-            ['/3.0.0-beta.x/getting-started/contributing', 'Contributing'],
-            ['/3.0.0-beta.x/getting-started/troubleshooting', 'Troubleshooting'],
+            ['/3.0.0-beta.x/getting-started/introduction', '介绍'],
+            ['/3.0.0-beta.x/getting-started/installation', '安装'],
+            ['/3.0.0-beta.x/getting-started/contributing', '贡献'],
+            ['/3.0.0-beta.x/getting-started/troubleshooting', '故障排除'],
             '/3.0.0-beta.x/getting-started/quick-start',
             '/3.0.0-beta.x/getting-started/quick-start-tutorial',
           ],
         },
         {
           collapsable: true,
-          title: '📄 Content API',
+          title: '📄 内容 API',
           children: [
             '/3.0.0-beta.x/content-api/api-endpoints',
             '/3.0.0-beta.x/content-api/parameters',
@@ -169,7 +170,7 @@ module.exports = {
         },
         {
           collapsable: true,
-          title: '💡 Concepts',
+          title: '💡 概念',
           children: [
             '/3.0.0-beta.x/concepts/file-structure',
             '/3.0.0-beta.x/concepts/configurations',
@@ -192,7 +193,7 @@ module.exports = {
         },
         {
           collapsable: true,
-          title: '📚 Guides',
+          title: '📚 指南',
           children: [
             '/3.0.0-beta.x/guides/update-version',
             '/3.0.0-beta.x/guides/databases',
@@ -217,12 +218,12 @@ module.exports = {
         },
         {
           collapsable: true,
-          title: '⚙️️ Admin Panel',
+          title: '⚙️️ 管理面板',
           children: ['/3.0.0-beta.x/admin-panel/customization', '/3.0.0-beta.x/admin-panel/deploy'],
         },
         {
           collapsable: true,
-          title: '📦 Plugins',
+          title: '📦 插件',
           children: [
             '/3.0.0-beta.x/plugins/users-permissions',
             '/3.0.0-beta.x/plugins/documentation',
@@ -233,7 +234,7 @@ module.exports = {
         },
         {
           collapsable: true,
-          title: '🔌 Local Plugins',
+          title: '🔌 本地插件',
           children: [
             '/3.0.0-beta.x/plugin-development/quick-start',
             '/3.0.0-beta.x/plugin-development/plugin-architecture',
@@ -244,12 +245,12 @@ module.exports = {
         },
         {
           collapsable: true,
-          title: '💻 Command Line Interface',
+          title: '💻 命令行界面',
           children: ['/3.0.0-beta.x/cli/CLI'],
         },
         {
           collapsable: true,
-          title: '🏗 Global strapi',
+          title: '🏗 全局 strapi',
           children: [
             '/3.0.0-beta.x/global-strapi/api-reference',
             '/3.0.0-beta.x/global-strapi/usage-information',
@@ -257,10 +258,10 @@ module.exports = {
         },
         {
           collapsable: false,
-          title: '📚 Resources',
+          title: '📚 源码',
           children: [
-            ['https://github.com/strapi/strapi/blob/master/CONTRIBUTING.md', 'Contributing guide'],
-            '/3.0.0-beta.x/migration-guide/',
+            ['https://github.com/strapi/strapi/blob/master/CONTRIBUTING.md', '贡献指南'],
+            ['/3.0.0-beta.x/migration-guide/', '迁移指南'],
           ],
         },
       ],
